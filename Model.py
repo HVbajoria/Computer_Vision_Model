@@ -4,6 +4,7 @@
 # 2) Test it using streamlit hello : This opens up a demo app.
 # 3) Type in cmd : streamlit run Model.py 
 
+# Importing the required libraries
 import cv2
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -54,6 +55,7 @@ if image is not None:
         with placeholder.beta_container():
               st.title("GrayScaled Image :")
               st.write("This application is made by Harshavardhan Bajoria. It performs various operations witih OpenCV")
+                #Makes the image grayscaled
               image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
               st.image(image)
 
@@ -69,6 +71,7 @@ if image is not None:
             blue=st.slider("Blue",0,255,None,1)
             zeros=np.zeros((image.shape[0],image.shape[1]),np.uint8)
             b,g,r=cv2.split(image)
+                # To get the final image with new RGB values
             custom=cv2.merge([b+blue,g+green,r+red])
             st.image(custom)
 
