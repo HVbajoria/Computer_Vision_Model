@@ -1,5 +1,5 @@
-# Computer Vision Model 💻 👁️
-This is a model made to perform various computer vision tasks by Harshavardhan Bajoria. 
+# Vishop 💻 👁️
+This is an application made to perform various computer vision tasks by Harshavardhan Bajoria. 
 </br>
 
 ## It can perform : 💡
